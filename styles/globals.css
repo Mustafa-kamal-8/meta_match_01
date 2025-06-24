@@ -1,0 +1,43 @@
+:root {
+  /* Light Theme Variables (default) */
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --primary-color: #0070f3;
+  --card-background: #f0f0f0;
+  --border-color: #e0e0e0;
+}
+
+[data-theme='dark'] {
+  /* Dark Theme Variables */
+  --background-color: #1a202c; /* Darker background */
+  --text-color: #e2e8f0;     /* Lighter text */
+  --primary-color: #90cdf4;   /* Lighter primary color */
+  --card-background: #2d3748; /* Darker card background */
+  --border-color: #4a5568;    /* Darker border */
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: var(--background-color); /* Apply theme variable */
+  color: var(--text-color); /* Apply theme variable */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Example usage of theme variables in other components */
+.card {
+  background-color: var(--card-background);
+  border: 1px solid var(--border-color);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.button {
+  background-color: var(--primary-color);
+  color: var(--background-color); /* Text on primary button should contrast with primary color */
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
