@@ -19,12 +19,10 @@ export default function ThemeToggle() {
    {theme === 'dark' ? (
   <>
     <FaSun className="text-sidebar-foreground" />
-    {/* Sun icon for light mode */}
   </>
 ) : (
   <>
     <FaMoon className="text-sidebar-foreground" />
-    {/* Moon icon for dark mode */}
   </>
 )}
 

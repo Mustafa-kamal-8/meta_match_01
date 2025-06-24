@@ -3,7 +3,7 @@
 
 import React from 'react';
 import ThemeToggle from './ThemeToggle';
-import { FaBars, FaSearch } from 'react-icons/fa'; // Import FaSearch for the search icon
+import { FaSearch } from 'react-icons/fa'; // Import FaSearch for the search icon
 import Link from 'next/link';
 
 interface TopbarProps {
