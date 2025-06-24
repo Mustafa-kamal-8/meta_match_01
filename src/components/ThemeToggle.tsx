@@ -16,11 +16,18 @@ export default function ThemeToggle() {
                  transition-colors duration-200"
       aria-label={theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
     >
-      {theme === 'dark' ? (
-        <FaSun className="text-sidebar-foreground" /> // Sun icon for light mode
-      ) : (
-        <FaMoon className="text-sidebar-foreground" /> // Moon icon for dark mode
-      )}
+   {theme === 'dark' ? (
+  <>
+    <FaSun className="text-sidebar-foreground" />
+    {/* Sun icon for light mode */}
+  </>
+) : (
+  <>
+    <FaMoon className="text-sidebar-foreground" />
+    {/* Moon icon for dark mode */}
+  </>
+)}
+
     </button>
   );
 }
